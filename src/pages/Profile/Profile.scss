@@ -1,0 +1,100 @@
+@use "../../style/partials/mixins" as *;
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  &__title {
+    @include font(3rem, 3rem, 600);
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    padding-top: 2vw;
+  }
+}
+
+.profile-container {
+  width: 75vw;
+  background: white;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  align-items: end;
+
+  &__avatar {
+    width: 60%;
+    padding-bottom: 10%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__right {
+    width: 600px;
+  }
+
+  &__info-bold {
+    @include font(1.5rem, 2rem, 700);
+  }
+
+  &__info-copy {
+    @include font(1.5rem, 2rem, 200);
+  }
+
+  &__copy {
+    @include font(1.75rem, 3rem, 200);
+    margin-bottom: 3%;
+  }
+
+  &__bold {
+    @include font(1.75rem, 3rem, 700);
+  }
+
+  &__buttons {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10vw;
+    width: 330px;
+  }
+
+  &__button1 {
+    background-color: #007f60;
+    @include font(1.25rem, 1rem, 300);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    height: 35px;
+  }
+
+  &__button1:hover {
+    background-color: #005e46;
+    cursor: pointer;
+  }
+
+  &__button2 {
+    background-color: white;
+    @include font(1.25rem, 1rem, 300);
+    width: 135px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  &__button2:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+}

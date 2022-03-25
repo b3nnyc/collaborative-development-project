@@ -1,0 +1,33 @@
+@use "../../style/global" as *;
+
+.section {
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+}
+
+.container__kudos {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 5%;
+
+  width: 75vw;
+  background: white;
+
+  height: 60rem;
+
+  &__heading {
+    font-size: 2rem;
+    align-self: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
