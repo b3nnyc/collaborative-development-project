@@ -5,11 +5,10 @@ export default function RouteMentors() {
   return (
     <section className="section">
       <h2 className="section__heading">Mentorship</h2>
-      <div className="container">
-        <h3 className="container__heading">
+      <div className="mentors-container">
+        <h3 className="mentors-container__heading">
           Based on the initial onboarding, these are the mentors we recommend:
         </h3>
-
         <div className="mentors">
           <div className="mentors__box">
             <div className="mentors__image background-image-orange">

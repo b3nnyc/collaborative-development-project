@@ -1,4 +1,5 @@
 @use "../../style/global" as *;
+@use "../../style/partials/mixins" as *;
 
 .section {
   &__heading {
@@ -8,6 +9,7 @@
 }
 
 .container__kudos {
+  border-radius: 10px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -30,4 +32,28 @@
   &__link {
     text-decoration: none;
   }
+}
+
+.text-box {
+  @include font(2rem, 2rem, 200);
+  @include display-flex(column, none, center);
+  row-gap: 1.8rem;
+  line-height: 1.2;
+  width: 40rem;
+}
+
+.text-box__link {
+  display: block;
+  margin-top: 2rem;
+  align-self: center;
+  text-decoration: none;
+  background-color: #007f60;
+  padding: 1rem 2rem;
+  color: white;
+  border: transparent;
+  border-radius: 4px;
+  @include font(2rem, 2rem, 300);
+}
+.text-box__link:hover {
+  background-color: #005e46;
 }

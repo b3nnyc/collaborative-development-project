@@ -45,7 +45,7 @@
   }
 
   &__info-bold {
-    @include font(1.5rem, 2rem, 700);
+    @include font(1.5rem, 2rem, 600);
   }
 
   &__info-copy {
@@ -58,7 +58,7 @@
   }
 
   &__bold {
-    @include font(1.75rem, 3rem, 700);
+    @include font(1.75rem, 3rem, 600);
   }
 
   &__buttons {
@@ -71,7 +71,7 @@
 
   &__button1 {
     background-color: #007f60;
-    @include font(1.25rem, 1rem, 300);
+    @include font(1.35rem, 2rem, 300);
     border: none;
     border-radius: 5px;
     color: white;
@@ -86,7 +86,7 @@
 
   &__button2 {
     background-color: white;
-    @include font(1.25rem, 1rem, 300);
+    @include font(1.35rem, 2rem, 300);
     width: 135px;
     height: 35px;
     border-radius: 5px;
