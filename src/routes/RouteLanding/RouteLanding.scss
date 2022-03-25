@@ -11,10 +11,16 @@
 .container {
   width: 1024px;
   background: white;
-  margin-left: 10%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px rgb(231, 231, 231);
+
+  &__link {
+    text-decoration: no;
+  }
 
   &__image {
     display: flex;
