@@ -1,7 +1,9 @@
+@use "../style/partials/mixins" as *;
+
 .section {
   &__heading {
     padding-top: 5%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     padding-left: 5%;
     padding-bottom: 2%;
@@ -9,18 +11,79 @@
 }
 
 .container {
-  width: 1024px;
+  width: 960px;
   background: white;
-  margin-left: 10%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
 
   &__image {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 160px;
     padding-top: 5%;
     padding-bottom: 4%;
+  }
+
+  &__header {
+    @include font(2rem, 2rem, 200);
+    padding-bottom: 2%;
+  }
+
+  &__copy {
+    @include font(1.55rem, 2rem, 500);
+    text-align: center;
+    width: 39%;
+    padding-bottom: 3%;
+  }
+
+  &__buttons {
+    padding-bottom: 10%;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  &__button1 {
+    background-color: #007f60;
+    @include font(1.5rem, 1rem, 300);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    height: 35px;
+  }
+
+  &__button1:hover {
+    background-color: #005e46;
+    cursor: pointer;
+  }
+
+  &__button2 {
+    background-color: white;
+    @include font(1.5rem, 1rem, 300);
+    width: 135px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  &__button2:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  @include font(1.5rem, 1rem, 400);
+  margin-top: 5%;
+  margin-left: 5%;
+
+  &__link {
+    margin-left: 3px;
   }
 }
