@@ -13,6 +13,7 @@ import './App.scss';
 // Routes
 import RouteLandingPage from './routes/RouteLanding/RouteLanding';
 import RouteMentors from './routes/RouteMentors/RouteMentors';
+import RouteKudos from './routes/RouteKudos/RouteKudos';
 
 // App
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<RouteLandingPage />} />
         <Route path='/mentors' element={<RouteMentors />} />
-        <Route path='/mentors/kudos' element={<RouteMentors />} />
+        <Route path='/mentors/kudos' element={<RouteKudos />} />
       </Routes>
     </BrowserRouter>
   );
