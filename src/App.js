@@ -22,6 +22,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<RouteLandingPage />} />
         <Route path='/mentors' element={<RouteMentors />} />
+        <Route path='/mentors/kudos' element={<RouteMentors />} />
       </Routes>
     </BrowserRouter>
   );
